@@ -44,7 +44,7 @@ You do **NOT** need programming experience to use **DANEELpath**!
 
  **DANEELpath** name is a reference to the robot **R.Daneel Olivaw**, one of the main characters of **Isaac Asimov** robot series. In the books **R.Daneel Olivaw** formulates the Zeroth law of the robotics:
 
-*~A robot may not harm humanity, or, by **INACTION**, allow humanity to come to harm~*
+*A robot may not harm humanity, or, by **INACTION**, allow humanity to come to harm*
 
 
 We are aware that not all the users have programming experience, and we do not want this to limit **DANEELpath** use. In the *DANEELpath_GUI* folder, you will find a set of groovy scripts that, when run in QuPath, will create a Graphical User Interface to interact. 
