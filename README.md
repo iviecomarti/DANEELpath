@@ -42,17 +42,13 @@ However, when we grow the cells in matrices in wich we added Vitronectin, when w
 
 You do **NOT** need programming experience to use **DANEELpath**!
 
- **DANEELpath** name is a reference to the robot **R.Daneel Olivaw**, one of the main characters of **Isaac Asimov** robot series. In the books **R.Daneel Olivaw** formulates the Zeroth law of the robotics:
-
-*A robot may not harm humanity, or, by **INACTION**, allow humanity to come to harm*
-
 
 We are aware that not all the users have programming experience, and we do not want this to limit **DANEELpath** use. In the *DANEELpath_GUI* folder, you will find a set of groovy scripts that, when run in QuPath, will create a Graphical User Interface to interact. 
 
 Nevertheless, we also want to support users with more experience. In the *DANEELpath_Scripts* folder you can find the groovy script version of the tools, with the same parameters as in the GUI, which enables to run the scripts for multiple images in QuPath.
 
 
-To facilitate DANEELpath use, we created a YouTube playlist showing the installation  and a demo of all the tools.
+To facilitate **DANEELpath** use, we created a YouTube tutorial showing the installation process. Furthermore we provide a series of tutorials showing how to use all the tools
 
 
 
@@ -83,8 +79,9 @@ Once download, unzip the folder and drag & drop `qupath-extension-cellpose-[vers
 
 
 
-## 2. Download the Github Repository in a folder. 
+## 2. Download the Github Repository, the U-Net checkpoints and the tutorials. 
 
+### 2.1 GitHub Repository
 You can download the GitHub repo as `zip` folder and extract the content in the desired folder in you machine. 
 
 If you have Git, you can create your destiny folder in your machine, open a Git Bash terminal and run the command: 
@@ -93,10 +90,24 @@ If you have Git, you can create your destiny folder in your machine, open a Git 
 git clone https://github.com/iviecomarti/DANEELpath.git
 ```
 
-Up to here, you would be able to use the spatial tools and the peri-cluster segmentation pipeline tools. 
+By doing this, you will have all the files present in this repository. However we still need to download the weights of the models and the tutorials 
 
-However, wee need some more steps to be able to use the U-Nets
+### 2.2 U-Net checkpoints and tutorials.
 
+You can download the U-Net weights and tutorials from INCLIVA cloud here: [DANEELpath_Unets_and_Tutorials](https://fincliva-my.sharepoint.com/:f:/g/personal/ivieco_incliva_es/Em1Gxnm8ZqVDla9rYuZahKkBJMObubzL_paoijLSp4D2Rw?e=q7IkKm)
+
+Once downloaded, unzip the folder. Inside you will find two folders: *U-Net_checkpoints* and *Tutorials*
+
+**IMPORTANT: DO NOT CHANGE THE FOLDERS NAME**
+
+You need to place, at least the folder *U-Net_checkpoints* to the same folder as all de files of the GitHub Repository have been downloaded. 
+You should have somehting like this: 
+
+![Folder End Illustration](./github_imgs/folder_end.png)
+
+
+
+Now that we downloaded the models, we need to do the set-up to install Miniconda and PyTorch. 
 
 
 ## 3. Download Miniconda and setup the PyTorch enviroment
@@ -116,15 +127,15 @@ In **DANEELpath** folder, you will see the **enviroments** folder. Inside that f
 Open a Miniconda terminal and go to the **enviroments** folder where you unziped **DANELpath**. 
 
 
-You need to run the following command in the terminal: 
+If you are in Windows11 you need to run the following command in the Anaconda terminal: 
 
 ```bash
-conda env create -f DANEELpath_env_[OS]_CPU.yml
+conda env create -f DANEELpath_env_Windows_CPU.yml
 ```
 
 This will take a little bit of time to install all the dependencies. 
 
-When the installation finishes, we neeed to check if `torch` is installed succesfully. Open the **DANEELpath** enviroment by typing in the terminal: 
+When the installation finishes, we neeed to check if `torch` is installed succesfully. Open the **DANEELpath** enviroment by typing in the Anaconda terminal: 
 
 ```bash
 conda activate DANEELpath
@@ -136,7 +147,7 @@ Then run this line of code:
 python -c "import torch; x = torch.rand(5, 3); print(x)"
 ```
 
-You will see something like this in the terminal: 
+You will see something like this in the terminal if everything goes okay: 
 
 ```bash
 tensor([[0.3380, 0.3845, 0.3217],
@@ -163,7 +174,7 @@ which python
 You will obtain an output simmilar to this one if you are in Windows11:
 
 ```bash
-C:\Users\User\anaconda3\envs\daneel\python.exe
+C:\Users\User\anaconda3\envs\DANEELpath\python.exe
 C:\Users\User\AppData\Local\Microsoft\WindowsApps\python.exe
 ```
 
@@ -202,8 +213,8 @@ Go to DANELpath > DANEELpath_Scripts > 1.Semantic_Segmentation > `1.1.Run_U-Net_
 
 ```groovy
 //Python conda settings
-def danelFolder = "C:/Users/Usuario/Desktop/daneel_final_adjustmets"
-def pathPythonEnviromentEXE = "C:/Users/Usuario/anaconda3/envs/segmentationModelsPytorch/python.exe"
+def danelFolder = "path/DANEELpath/folder"
+def pathPythonEnviromentEXE = "path/python.exe"
 
 ```
 
@@ -216,9 +227,9 @@ Save the groovy script.
 
 
 
-## 5.OPTIONAL: NVIDIA GPU support for Windows11 and Linux
+## 5.OPTIONAL: NVIDIA GPU for Windows11 and Linux
 
-We can take advantage of NVIDIA GPU acceleration for inference in DANEELpath. The U-Net fits in a 4BG VRAM GPU, so there is no need of huge investment. However to achieve this we need to do the setup for CUDA. 
+We can take advantage of NVIDIA GPU acceleration for inference in DANEELpath. The U-Net fits in a 4GB VRAM GPU, so there is no need of huge investment. However to achieve this we need to do the setup for CUDA. 
 
 ### 5.1 Download the NVIDIA drivers for you GPU
 
