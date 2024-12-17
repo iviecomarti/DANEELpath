@@ -11,7 +11,6 @@ Our YouTube playlist showing how to install and use **DANEELpath** is available 
 The original paper, with all the details can be found here:  _DANEELpath: Open-source Digital analysis tools for histopathological research. Applications in NEuroblastoma modELs_
 
 
-NEXT TO CHECK 
 
 ## What can DANEELpath do?
 
