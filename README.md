@@ -260,7 +260,7 @@ pip uninstall torch
 3. Install torch GPU. Here we tested CUDA 11.8 and works with Python 3.10. 
 
  ```bash
-conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
 4. Check if PyTorch detects GPU by running this command
