@@ -53,7 +53,7 @@ To facilitate **DANEELpath** use, we created a YouTube tutorial showing the inst
 
 
 
-# INSTALATION 
+# INSTALLATION 
 
 Here you will find the instructions for **DANEELpath** setup. If you have any problems, you can check our YouTube video.
 
