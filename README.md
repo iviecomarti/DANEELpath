@@ -6,7 +6,9 @@ At the moment **DANEELpath** tools are focused on obtaining data from 3D cell cu
 
 **DANEELpath** is built to work inside [QuPath](https://qupath.github.io/), a popular software for digital pathology.
 
-Our YouTube playlist showing how to install and use **DANEELpath** is available here:
+Our YouTube tutorial showing how to install  **DANEELpath** is available here:
+
+The tutorials can be downloaded tooguether with the DL model weights from INCLIVA cloud [here](https://fincliva-my.sharepoint.com/:f:/g/personal/ivieco_incliva_es/Em1Gxnm8ZqVDla9rYuZahKkBJMObubzL_paoijLSp4D2Rw?e=q7IkKm)
 
 The original paper, with all the details can be found here:  _DANEELpath: Open-source Digital analysis tools for histopathological research. Applications in NEuroblastoma modELs_
 
