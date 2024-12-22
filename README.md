@@ -55,7 +55,7 @@ To facilitate **DANEELpath** use, we created a YouTube tutorial showing the inst
 
 # INSTALLATION 
 
-Here you will find the instructions for **DANEELpath** setup. If you have any problems, you can check our YouTube video.
+Here you will find the instructions for **DANEELpath** setup. If you have any problems, you can check our [YouTube videos](https://www.youtube.com/playlist?list=PLy8rOAuzr1smDChoWlHs-aqI4c4eMIJm8).
 
 
 ## 1. Install QuPath and Cellpose extension
@@ -166,21 +166,28 @@ If you are in a Windows machine run in the terminal:
 ```bash
 where python
 ```
+
+You will obtain an output simmilar to this one if you are in Windows11:
+
+```bash
+C:\Users\User\anaconda3\envs\DANEELpath\python.exe
+```
+
 If you are in a Linux/Mac run in the terminal: 
 
 ```bash
 which python
 ```
 
-You will obtain an output simmilar to this one if you are in Windows11:
+You will obtain an output simmilar to this one in Linux/Mac
 
 ```bash
-C:\Users\User\anaconda3\envs\DANEELpath\python.exe
-C:\Users\User\AppData\Local\Microsoft\WindowsApps\python.exe
+/home/User/miniconda3/envs/DANEELpath/bin/python
 ```
 
-Copy the output for **DANEELpath** `python.exe`,  and it is IMPORTANT to change the direction of the bars from `\` to `/`in the above example you need to do: `C:/Users/User/anaconda3/envs/DANEELpath/python.exe` 
+Copy the output for **DANEELpath** `python.exe`,  and it is IMPORTANT to change the direction of the bars from `\` to `/` if you are in Windows11. The above example you need to do: `C:/Users/User/anaconda3/envs/DANEELpath/python.exe` 
 
+For Linux and Mac, the bars are in the correct direction. Furthermore, you do not have `python.exe` after asking the path.  You should copy just: `/home/User/miniconda3/envs/DANEELpath/bin/python` 
 
 ## 4. Set the Python Path in Groovy scripts for U-Net
 
