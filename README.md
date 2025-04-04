@@ -10,7 +10,7 @@ Our YouTube tutorial showing how to install  **DANEELpath** is available here:[Y
 
 The tutorials can be downloaded tooguether with the DL model weights from INCLIVA cloud [here](https://fincliva-my.sharepoint.com/:f:/g/personal/ivieco_incliva_es/Em1Gxnm8ZqVDla9rYuZahKkBJMObubzL_paoijLSp4D2Rw?e=q7IkKm)
 
-The original paper, with all the details can be found here:  _DANEELpath: Open-source Digital analysis tools for histopathological research. Applications in NEuroblastoma modELs_
+The original preprint, with all the details can be found [here](https://www.biorxiv.org/content/10.1101/2025.03.31.646267v1): DANEELpath: Open-source Digital analysis tools for histopathological research. Applications in NEuroblastoma modELs.  bioRxiv 2025.03.31.646267; doi: https://doi.org/10.1101/2025.03.31.646267
 
 
 
@@ -293,7 +293,7 @@ Burri O, Sobolewski P, Fehlmann T. BIOP:qupath-extension-cellpose. 2024  Availab
 
 ## And also our reference 
 
-_DANEELpath: Open-source Digital analysis tools for histopathological research. Applications in NEuroblastoma modELs_
+Vieco-Martí et al. DANEELpath: Open-source Digital analysis tools for histopathological research. Applications in NEuroblastoma modELs. bioRxiv 2025.03.31.646267; doi: https://doi.org/10.1101/2025.03.31.646267
 
 
 # ISSUES
