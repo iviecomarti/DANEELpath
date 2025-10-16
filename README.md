@@ -2,6 +2,15 @@
 
 **DANEELpath** is an open-source image analysis toolkit developed to work with neuroblastoma models. 
 
+> **NEW!** 
+> **DANEELpath** has now a QuPath extension!
+> The functionalities are the same, but the installation process is easier and all the tools are much faster. 
+> You can check the extension and download it from [qupath-extension-daneelpath](https://github.com/iviecomarti/qupath-extension-daneelpath).
+> 
+
+
+
+
 At the moment **DANEELpath** tools are focused on obtaining data from 3D cell culture hydrogels histological slides. Nevertheless the tools can be used to work with _in vivo_ and human histological samples. 
 
 **DANEELpath** is built to work inside [QuPath](https://qupath.github.io/), a popular software for digital pathology.
@@ -62,17 +71,17 @@ Here you will find the instructions for **DANEELpath** setup. If you have any pr
 
 ### 1.1 QuPath
 
-**DANEELpath** works inv **QuPath** version 0.5 and above. You can download **QuPath** from this link: https://qupath.github.io/
+**DANEELpath** works inv **QuPath** version 0.6.0 and above. You can download **QuPath** from this link: https://qupath.github.io/
 
-If you have  problems during **QuPath** installation, you can check this link: https://qupath.readthedocs.io/en/0.5/docs/intro/installation.html
+If you have  problems during **QuPath** installation, you can check this link: https://qupath.readthedocs.io/en/stable/docs/intro/installation.html
 
 ### 1.2 Install qupath-extension-cellpose 
 
-**DANELpath** uses a functionality inside the incredible qupath-extension-cellpose from [BIOP](https://github.com/BIOP/qupath-extension-cellpose). 
+**DANEELpath** uses a functionality inside the incredible qupath-extension-cellpose from [BIOP](https://github.com/BIOP/qupath-extension-cellpose). **DANEELpath** need the version 0.11.0 or above of the BIOP extension. 
 
-**DANEELpath** need the version 0.9.6 or above of the BIOP extension. You can download the last realease of the extension in this link: https://github.com/BIOP/qupath-extension-cellpose/releases 
+You can follow the instructions of [qupath-extension-cellpose](https://github.com/BIOP/qupath-extension-cellpose) to install the extension using the QuPath Extension Manager. 
 
-Once download, unzip the folder and drag & drop `qupath-extension-cellpose-[version].jar` onto the main QuPath window. Then restart **QuPath** (not the computer)
+As alternative, you can download the extension from this [link](https://github.com/BIOP/qupath-extension-cellpose/releases) unzip the folder and drag & drop `qupath-extension-cellpose-[version].jar` onto the main QuPath window. Then restart **QuPath** (not the computer)
 
 
 
