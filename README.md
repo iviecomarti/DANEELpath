@@ -2,7 +2,8 @@
 
 **DANEELpath** is an open-source image analysis toolkit developed to work with neuroblastoma models. 
 
-> **NEW!** 
+>[!IMPORTANT]
+>  **NEW!** 
 > **DANEELpath** has now a QuPath extension!
 > The functionalities are the same, but the installation process is easier and all the tools are much faster. 
 > You can check the extension and download it from [qupath-extension-daneelpath](https://github.com/iviecomarti/qupath-extension-daneelpath).
